@@ -50,7 +50,6 @@
     "chart.js": "^4.4.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cmdk": "1.0.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.2",
     "embla-carousel-react": "^8.5.2",

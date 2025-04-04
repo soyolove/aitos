@@ -83,7 +83,7 @@ export class TelegramBotManager {
       command: "chat",
       description: "Repeats the message you sent",
       handler: async (msg, args) => {
-        const usageMessage = args || "Empty message";
+        const usageMessage = args || "Empty Message";
 
         const reply = await agent.thinking.response({
           input: usageMessage,

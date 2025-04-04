@@ -42,7 +42,7 @@ export default function AitosAutomation() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-6">
             <Link
-              href="/get-started"
+              href="/agent"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground border-0 px-12 py-4 text-base font-medium hover:bg-primary/90 transition-all"
             >
               Get Started <ArrowUpRight className="ml-2 h-4 w-4" />
@@ -135,7 +135,7 @@ export default function AitosAutomation() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Link href="/sekai-agent" className="block group">
+          <Link href="/agent" className="block group">
             <Card className="rounded-none shadow-none h-full border border-border hover:border-primary transition-all duration-200 bg-card relative">
               <div className="absolute bottom-0 right-0 w-12 h-12 border-l border-t border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <ArrowUpRight className="h-4 w-4" />
@@ -154,7 +154,7 @@ export default function AitosAutomation() {
             </Card>
           </Link>
 
-          <Link href="/aptos-analysis" className="block group">
+          <Link href="/aptos-market" className="block group">
             <Card className="rounded-none shadow-none h-full border border-border hover:border-primary transition-all duration-200 bg-card relative">
               <div className="absolute bottom-0 right-0 w-12 h-12 border-l border-t border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <ArrowUpRight className="h-4 w-4" />
@@ -173,7 +173,7 @@ export default function AitosAutomation() {
             </Card>
           </Link>
 
-          <Link href="/ai-portfolio" className="block group">
+          <Link href="/portfolio" className="block group">
             <Card className="rounded-none shadow-none h-full border border-border hover:border-primary transition-all duration-200 bg-card relative">
               <div className="absolute bottom-0 right-0 w-12 h-12 border-l border-t border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <ArrowUpRight className="h-4 w-4" />
@@ -191,25 +191,6 @@ export default function AitosAutomation() {
               </CardHeader>
             </Card>
           </Link>
-
-          {/* <Link href="/ai-assistant" className="block group">
-            <Card className="rounded-none shadow-none h-full border border-border hover:border-primary transition-all duration-200 bg-card relative">
-              <div className="absolute top-0 right-0 w-12 h-12 border-l border-b border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowUpRight className="h-4 w-4" />
-              </div>
-              <CardHeader>
-                <div className="mb-4 p-4 border border-border flex items-center justify-center group-hover:border-primary transition-all duration-200">
-                  <Bot className="h-6 w-6" />
-                </div>
-                <CardTitle className="text-xl text-primary">
-                  AI Assistant
-                </CardTitle>
-                <CardDescription className="text-base mt-2">
-                  Natural language interface for all operations
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </Link> */}
         </div>
       </div>
 
@@ -365,13 +346,13 @@ export default function AitosAutomation() {
 
           <div className="pt-4 flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              href="/activate"
+              href="/agent"
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 text-base font-medium hover:bg-primary/90 transition-all"
             >
               Activate AI Pilot
             </Link>
             <Link
-              href="/market-blueprint"
+              href="/aptos-market"
               className="inline-flex items-center justify-center bg-background text-primary border border-border px-12 py-4 text-base font-medium hover:bg-muted transition-all"
             >
               Market Blueprint

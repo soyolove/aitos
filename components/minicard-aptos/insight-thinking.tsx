@@ -192,7 +192,7 @@ export function ThoughtStream() {
         
         
         <div className="text-xs text-muted-foreground">
-          <span>Powered by Atoma & DeepSeek</span>
+          <span>Scheduled market perception and deep reasoning</span>
         </div>
       </div>
     </div>

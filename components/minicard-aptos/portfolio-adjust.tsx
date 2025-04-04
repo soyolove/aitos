@@ -145,7 +145,7 @@ export function PositionHistoryCard() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-end ml-4">
+                  <div className="flex flex-col items-end ml-4 min-w-16">
                     <div className="flex items-center text-xs text-muted-foreground mb-1">
                       <Calendar className="h-3 w-3 mr-1" />
                       {formatDate(item.timestamp.toISOString())}

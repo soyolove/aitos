@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/sidebar";
 import Image from "next/image";
 import { ModeToggle as ThemeButton } from "./theme-button";
+import ThemedLogo from "./themed-logo";
 
 export function AppSidebar() {
   return (
@@ -38,13 +39,7 @@ export function AppSidebar() {
           <SidebarMenu>
             <SidebarMenuItem>
               <div className="flex items-center space-x-3">
-                <Image
-                  src="/aitos.png"
-                  alt="AITOS Logo"
-                  width={36}
-                  height={36}
-                  className="rounded-none"
-                />
+                <ThemedLogo size="small" />
                 <span className="font-bold text-xl tracking-tight">AITOS</span>
               </div>
             </SidebarMenuItem>

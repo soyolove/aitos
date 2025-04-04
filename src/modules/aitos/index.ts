@@ -65,7 +65,7 @@ class InvestmentManager {
   }
 }
 
-export function enableWonderlandModule(agent: Agent) {
+export function enableAitosModule(agent: Agent) {
   const investmentMgr = new InvestmentManager(agent);
   investmentMgr.init();
 
@@ -89,10 +89,10 @@ export function enableWonderlandModule(agent: Agent) {
     });
   });
 
-  agent.sensing.emitEvent({
-    type: "UPDATE_RATE_EVENT",
-    description: "Agent should update price rate.",
-    payload: {},
-    timestamp: Date.now(),
-  });
+  // agent.sensing.emitEvent({
+  //   type: "UPDATE_RATE_EVENT",
+  //   description: "Agent should update price rate.",
+  //   payload: {},
+  //   timestamp: Date.now(),
+  // });
 }

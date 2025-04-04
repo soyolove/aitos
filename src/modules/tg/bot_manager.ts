@@ -80,7 +80,7 @@ export class TelegramBotManager {
     });
 
     this.registerCommand({
-      command: "echo",
+      command: "chat",
       description: "Repeats the message you sent",
       handler: async (msg, args) => {
         const usageMessage = args || "Empty message";
@@ -89,9 +89,41 @@ export class TelegramBotManager {
           input: usageMessage,
           model: "large",
           platform: "qwen",
-          systemPrompt: "You are a professional crypto assistant.",
+          systemPrompt:
+            "You are a professional crypto assistant. Your name is Aitos.",
         });
         await this.bot!.sendMessage(msg.chat.id, reply);
+      },
+    });
+
+    this.registerCommand({
+      command: "refresh_market_insight",
+      description: "Refresh market insight",
+      handler: async (msg) => {
+        agent.sensing.emitEvent({
+          type: "UPDATE_Rate_EVENT",
+          description: "Agent should update market insight",
+          payload: {},
+          timestamp: Date.now(),
+        });
+        await this.bot!.sendMessage(msg.chat.id, "Market insight refreshed.");
+      },
+    });
+
+    this.registerCommand({
+      command: "adjust_portfolio",
+      description: "Adjust your portfolio right now",
+      handler: async (msg) => {
+        agent.sensing.emitEvent({
+          type: "UPDATE_PORTFOLIO_EVENT",
+          description: "Agent should update portfolio",
+          payload: {},
+          timestamp: Date.now(),
+        });
+        await this.bot!.sendMessage(
+          msg.chat.id,
+          "Portfolio is adjusting. Please wait."
+        );
       },
     });
   }

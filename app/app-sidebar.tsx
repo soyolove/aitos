@@ -11,6 +11,9 @@ import {
   ChevronsLeftRightEllipsis,
   MessageCircleMore,
   Anchor,
+  XIcon,
+  TableOfContentsIcon,
+  SearchIcon,
 } from "lucide-react";
 
 import {
@@ -114,7 +117,6 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
 
-                {/* Telegram */}
                 <SidebarMenuItem className="ml-2">
                   <SidebarMenuButton
                     asChild
@@ -126,8 +128,46 @@ export function AppSidebar() {
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                {/* X */}
 
-             
+                    <SidebarMenuItem className="ml-2">
+                  <SidebarMenuButton
+                    asChild
+                    className="rounded-none border border-transparent hover:border-gray-200 dark:hover:border-gray-800 w-full"
+                  >
+                    <a href="/x" className="flex items-center py-2 px-2">
+                      <XIcon className="mr-3" size={16} />
+                      <span>X Posts</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+
+
+              <SidebarMenuItem className="ml-2">
+                  <SidebarMenuButton
+                    asChild
+                    className="rounded-none border border-transparent hover:border-gray-200 dark:hover:border-gray-800 w-full"
+                  >
+                    <a href="/content-evaluation" className="flex items-center py-2 px-2">
+                      <TableOfContentsIcon className="mr-3" size={16} />
+                      <span>Content Evaluation</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+
+                 <SidebarMenuItem className="ml-2">
+                  <SidebarMenuButton
+                    asChild
+                    className="rounded-none border border-transparent hover:border-gray-200 dark:hover:border-gray-800 w-full"
+                  >
+                    <a href="/deep-research" className="flex items-center py-2 px-2">
+                      <SearchIcon className="mr-3" size={16} />
+                      <span>Deep Research</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+
+
               </div>
             </SidebarMenu>
           </SidebarGroupContent>
